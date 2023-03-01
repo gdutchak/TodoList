@@ -1,0 +1,22 @@
+table {
+    margin: 100px auto 0;
+    padding: 20px;
+}
+
+.tableHead {
+    font-size: 26px;
+    font-weight: 600;
+    padding: 16px 25px;
+}
+
+.tableBody {
+    padding: 16px 25px;
+    font-size: 22px;
+}
+
+.inputTable {
+    width: 18px;
+    height: 18px;
+    display: block;
+    margin: 0 auto;
+}

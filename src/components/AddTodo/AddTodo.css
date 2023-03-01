@@ -1,0 +1,38 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelForm {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+label {
+    margin-right: 60px;
+    height: 97px;
+}
+
+.inputForm {
+    padding: 6px;
+    font-size: 20px;
+}
+
+.inputForm--red {
+    border: 1px solid red;
+}
+
+.buttonForm {
+    font-size: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 21px;
+}
+
+.buttonForm:hover, .buttonForm:focus {
+    background-color: rgb(79, 80, 81);
+    color: white;
+}

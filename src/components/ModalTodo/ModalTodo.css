@@ -1,0 +1,63 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 20;
+}
+
+.backdropForm {
+    position: absolute;
+    width: 600px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 100;
+}
+
+.backdropTitle {
+text-align: center;
+}
+
+.backdropText {
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+span.backdropText {
+    margin: 0 10px 0 0;
+}
+
+.backdropDesc {
+    margin: 0 0 20px;
+    font-size: 18px;
+}
+
+.backdropStatus {
+margin-right: 0;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+height: 20px;
+}
+
+.backdropInput {
+margin: 0;
+height: 20px;
+width: 20px;
+}
+
+.backdropBtn {
+    padding: 4px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.backdropBtn:hover, .backdropBtn:focus {
+    background-color: rgb(79, 80, 81);
+    color: white;
+}
