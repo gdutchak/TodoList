@@ -1,6 +1,6 @@
 import './ModalTodo.css';
 
-export const ModalTodo = ({listTodo, id, modalShow}) => {
+export const ModalTodo = ({listTodo, id, modalShow, status}) => {
 
 
     return(
@@ -14,7 +14,7 @@ export const ModalTodo = ({listTodo, id, modalShow}) => {
                             <p className='backdropDesc'>{item.description}</p>
                             <label className='backdropStatus'>
                                 <span className='backdropText'>Status: </span>
-                            {item.status ? <input type="checkbox" defaultChecked className='backdropInput' onChange={()=> item.status = !item.status}/> : <input type="checkbox" className='backdropInput' onChange={()=> item.status = !item.status}/>}
+                                <input type="checkbox" checked={item.status} className='backdropInput' onChange={()=> status(item.id)}/> 
                             </label>
                             <button type="button" onClick={()=>modalShow(prev=>!prev)} className='backdropBtn'>Close</button>
                             </div>

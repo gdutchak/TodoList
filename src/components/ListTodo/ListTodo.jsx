@@ -1,6 +1,6 @@
 import './ListTodo.css';
 
-export const ListTodo = ({listTodo, idTodo, modalShow}) => {
+export const ListTodo = ({listTodo, idTodo, modalShow, status}) => {
 
 
 return (
@@ -21,7 +21,7 @@ return (
                         <td className='tableBody'>{item.title.length > 10 ? `${item.title.slice(0, 10)}...` : item.title}</td>
                         <td className='tableBody'>{item.description.length > 20 ? `${item.description.slice(0, 20)}...` : item.description}</td>
                         <td className='tableBody'>
-                            <input type='checkbox' onChange={()=> item.status = !item.status} onClick={(e)=> e.stopPropagation()} className='inputTable'/>
+                            <input type='checkbox' onChange={()=> status(item.id)} checked={item.status} onClick={(e)=> e.stopPropagation()} className='inputTable'/>
                         </td>
                     </tr>
                 )
